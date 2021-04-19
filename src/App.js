@@ -9,7 +9,7 @@ import { AppProvider } from './context/AppContext';
 const App = () => {
   return (
     <AppProvider>
-      <div classNme='container'>
+      <div className='container'>
         <h1 className='mt-3 px-3'>My Budget Planner</h1>
         <div className='row mt-3 p-3'>
           <div className='col-sm'>
@@ -23,7 +23,10 @@ const App = () => {
           </div>
         </div>
         <h3 className='mt-3 px-3'>Expenses</h3>
-        <input placeholder='Type to search...' className='form-control p-3' />
+        <input
+          placeholder='Type to search...'
+          className='form-control m-3 p-3'
+        />
         <div className='row mt-3 p-3'>
           <div className='col-sm'>
             <ExpenseList />
